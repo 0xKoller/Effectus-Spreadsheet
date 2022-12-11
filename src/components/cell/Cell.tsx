@@ -5,19 +5,13 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { atom, useRecoilState } from "recoil";
+import { useRecoilState } from "recoil";
+import { CellValueState } from "../../store/CellValueState";
 import classes from "./Cell.module.css";
 
-const CellValueState = atom({
-  key: "cell",
-  default: "test",
-});
+export type CellProps = {};
 
-export type CellProps = {
-  children: React.ReactNode;
-};
-
-const Cell: FunctionComponent<CellProps> = (props) => {
+const Cell: FunctionComponent<CellProps> = (props: any) => {
   const [cellValue, setCellValue] = useRecoilState<string>(CellValueState);
   const [isEditMode, setIsEditMode] = useState(false);
   const inputRef = useRef(null);
