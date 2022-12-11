@@ -1,7 +1,12 @@
 import Cell from "./components/cell/Cell";
+import { RecoilRoot } from "recoil";
 
 function App() {
-  return <Cell>Hello</Cell>;
+  return (
+    <RecoilRoot>
+      <Cell>Hello</Cell>
+    </RecoilRoot>
+  );
 }
 
 export default App;
