@@ -2,7 +2,7 @@ import { atom } from "recoil";
 export const SheetSizeState = atom({
   key: "SheetSizeState",
   default: {
-    width: 600,
-    heigth: 600,
+    width: window.innerWidth,
+    heigth: window.innerWidth,
   },
 });
