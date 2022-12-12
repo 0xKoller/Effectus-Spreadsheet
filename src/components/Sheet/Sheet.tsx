@@ -14,7 +14,7 @@ const Sheet: FunctionComponent<SheetProps> = (props: any) => {
   const numberOfColumns = sheetSize.width / CELL_WIDTH;
   const numberOfRows = sheetSize.heigth / CELL_HEIGTH;
   return (
-    <table>
+    <table className={classes.Sheet}>
       <tbody>
         {[...Array(numberOfRows)].map((row, rowIndex) => (
           <Row key={rowIndex}>
