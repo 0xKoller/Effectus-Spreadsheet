@@ -1,8 +1,8 @@
 import { selector } from "recoil";
-import { memoize } from "../utils/memoize";
-import { CellValueState } from "./CellValueState";
+import { memoize } from "../utils/memoize.js";
+import { CellValueState } from "./CellValueState.js";
 import { evaluate } from "mathjs";
-import { getEquationExpressionFromState } from "../utils/getEquationExpressionFromState";
+import { getEquationExpressionFromState } from "../utils/getEquationExpressionFromState.js";
 
 export const EvaluatedCellValueState = (cellId: string) =>
   memoize(`evaluatedCell_${cellId}`, () =>
