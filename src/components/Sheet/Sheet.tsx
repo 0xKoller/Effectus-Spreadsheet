@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import Cell, { CELL_HEIGTH, CELL_WIDTH } from "../Cell/Cell.js";
+import Cell, { CELL_HEIGTH, CELL_WIDTH } from "../Cell/Cell";
 import Column from "../Columns/Column.js";
 import Row from "../Row/Row.js";
 import { useRecoilValue } from "recoil";
