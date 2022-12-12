@@ -1,4 +1,4 @@
-import { charToNumber } from "./charToNumber";
+import { charToNumber } from "./charToNumber.js";
 
 export const cellIdtoMatrixIndices = (cellId: string) => {
   const columnLetters = cellId.match(/[A-Z]+/)![0];

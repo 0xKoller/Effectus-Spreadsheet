@@ -1,5 +1,5 @@
-import { cellIdtoMatrixIndices } from "./cellIdToMatrixIndices";
-import { CellValueState } from "../store/CellValueState";
+import { cellIdtoMatrixIndices } from "./cellIdToMatrixIndices.js";
+import { CellValueState } from "../store/CellValueState.js";
 
 export const getEquationExpressionFromState = (
   getState: any,

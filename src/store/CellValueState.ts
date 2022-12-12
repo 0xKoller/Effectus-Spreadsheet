@@ -1,5 +1,5 @@
 import { atom } from "recoil";
-import { memoize } from "../utils/memoize";
+import { memoize } from "../utils/memoize.js";
 
 export const CellValueState = (cellId: string) =>
   memoize(cellId, () =>

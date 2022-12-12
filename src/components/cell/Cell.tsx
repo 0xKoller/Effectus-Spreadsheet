@@ -7,8 +7,8 @@ import {
   useState,
 } from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
-import { CellValueState } from "../../store/CellValueState";
-import { EvaluatedCellValueState } from "../../store/EvaluatedCellValueState";
+import { CellValueState } from "../../store/CellValueState.js";
+import { EvaluatedCellValueState } from "../../store/EvaluatedCellValueState.js";
 import classes from "./Cell.module.css";
 
 export const CELL_WIDTH = 100;
