@@ -1,46 +1,17 @@
-# Getting Started with Create React App
+# Spreadsheet 
+Challenge propuesto por Effecuts, el cual consta de crear una hoja de calculo que posea la capacidad de realizar suma y resta algebraica, ademas de que los operandos de la misma sean celdas especificas.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Desafio Tecnologico
+Este challenge trajo mucho desafios a los cual enfrentarme. Que basicamente serian las siguientes preguntas:
+- ¿Puedo usar JS o debo de agregar TS?
+- ¿Debo de crear todos los componentes individualemnte, pero como cambia esto con TS?
+- ¿Como hago para referenciar a una celda?
+- ¿Uso mathjs o hago las operaciones manualmente?
+- Ahora que puedo hacer los calculos, ¿como obtengo los valores de la celda para los calculos?
 
-## Available Scripts
+Estas son algunas de las preguntas con las cual comence el desafio y empece a investigar, ya que si bien tenia una idea preeliminar no tenia en claro como y con que realizarlo. Ademas de que era una posibilidad para probar nuevas tecnologias, como TS que siempre me llamo la atencion debido al fuerte tipado y usar otra libreria que no sea Redux para el almacenamiento de estados de cada celda.
 
-In the project directory, you can run:
+A continuacion les dejo un link a [Notion](https://kollerman.notion.site/Effectus-Challenge-15d41685d65b4afbb912a9f01f24b3d7) mas preguntas y dudas que me surgieron en la realizacion del challenge, en el que ademas tambien explico porque tome ciertas decisiones para el codigo, estructura y logica.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<hr /> 
+<img src="https://i.pinimg.com/736x/da/23/8d/da238dc3a982fa7dfa89055279f8fe96.jpg" alt="Kitty saying thank you" style="height: 150px"/>
