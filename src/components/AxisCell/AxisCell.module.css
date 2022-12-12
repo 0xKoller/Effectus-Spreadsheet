@@ -1,6 +1,8 @@
 .AxisCell {
   text-align: center;
-  background-color: #ddd;
+  background-color: rgba(40, 40, 40, 0.3);
   padding: 3px;
   border: 1px solid #888;
+  min-width: 50px;
+  color: white;
 }
