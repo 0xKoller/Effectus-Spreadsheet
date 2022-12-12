@@ -1,4 +1,4 @@
-import React, { ComponentType, FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 import Cell, { CELL_HEIGTH, CELL_WIDTH } from "../Cell/Cell";
 import Column from "../Columns/Column";
 import Row from "../Row/Row";

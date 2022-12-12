@@ -1,4 +1,4 @@
-import { atom, useRecoilState } from "recoil";
+import { atom } from "recoil";
 import { memoize } from "../utils/memoize";
 
 export const CellValueState = (cellId: string) =>

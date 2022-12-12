@@ -1,6 +1,5 @@
-import React, { ComponentType, FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 import Sheet from "../Sheet/Sheet";
-import classes from "./SheetsContainer.module.css";
 
 export type SheetsContainerProps = {};
 
