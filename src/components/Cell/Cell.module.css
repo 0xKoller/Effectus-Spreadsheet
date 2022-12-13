@@ -4,6 +4,11 @@
   padding: 0;
   margin: 0;
   border: 0px;
+  background-color: white;
+}
+
+.CellInput:focus {
+  outline: 3px solid green;
 }
 
 .CellLabel {
@@ -14,4 +19,5 @@
   white-space: nowrap;
   overflow: hidden;
   line-height: 20px;
+  background-color: white;
 }

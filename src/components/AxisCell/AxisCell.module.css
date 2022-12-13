@@ -1,8 +1,12 @@
 .AxisCell {
   text-align: center;
-  background-color: rgba(40, 40, 40, 0.3);
+  background-color: rgba(239, 239, 239, 0.69);
   padding: 3px;
   border: 1px solid #888;
   min-width: 50px;
-  color: white;
+  font-weight: 300;
+}
+
+.AxisCell:hover {
+  background-color: green;
 }

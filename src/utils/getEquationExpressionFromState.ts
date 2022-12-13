@@ -33,7 +33,9 @@ export const getEquationExpressionFromState = (
             notAllowedCellsIds
           );
         }
-      } catch {}
+      } catch (error) {
+        console.log(error);
+      }
 
       return {
         cellId,

@@ -9,6 +9,7 @@ import {
 import { useRecoilState, useRecoilValue } from "recoil";
 import { CellValueState } from "../../store/CellValueState";
 import { EvaluatedCellValueState } from "../../store/EvaluatedCellValueState";
+import { ReadState } from "../../store/ReadState";
 import classes from "./Cell.module.css";
 
 export const CELL_WIDTH = 100;
@@ -19,6 +20,8 @@ export type CellProps = {
 };
 
 const Cell: FunctionComponent<CellProps> = (props: any) => {
+  const readOnly = useRecoilValue<string>(ReadState("read-only"));
+
   const [cellValue, setCellValue] = useRecoilState<string>(
     CellValueState(props.cellId)
   );
@@ -40,7 +43,7 @@ const Cell: FunctionComponent<CellProps> = (props: any) => {
   };
 
   const defocusInput = (event: KeyboardEvent<HTMLInputElement>) => {
-    if (event.key === "Enter") {
+    if (event.key === "Enter" || event.key === "Escape") {
       setIsEditMode(false);
     }
   };
@@ -59,15 +62,25 @@ const Cell: FunctionComponent<CellProps> = (props: any) => {
     return document.addEventListener("click", outsideInput);
   });
 
-  return isEditMode ? (
-    <input
-      className={classes.CellInput}
-      ref={inputRef}
-      data-cell-id={props.cellId}
-      value={cellValue}
-      onChange={updateCellState}
-      onKeyDown={defocusInput}
-    />
+  return readOnly === "false" ? (
+    isEditMode ? (
+      <input
+        className={classes.CellInput}
+        ref={inputRef}
+        data-cell-id={props.cellId}
+        value={cellValue}
+        onChange={updateCellState}
+        onKeyDown={defocusInput}
+      />
+    ) : (
+      <div
+        className={classes.CellLabel}
+        data-cell-id={props.cellId}
+        onClick={changeLabelToInput}
+      >
+        {evaluatedCellValueState}
+      </div>
+    )
   ) : (
     <div
       className={classes.CellLabel}
