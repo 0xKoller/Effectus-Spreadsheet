@@ -1,5 +1,5 @@
-import { cellIdtoMatrixIndices } from "./cellIdToMatrixIndices.js";
-import { CellValueState } from "../store/CellValueState.js";
+import { cellIdtoMatrixIndices } from "./cellIdToMatrixIndices";
+import { CellValueState } from "../store/CellValueState";
 
 export const getEquationExpressionFromState = (
   getState: any,
@@ -33,7 +33,9 @@ export const getEquationExpressionFromState = (
             notAllowedCellsIds
           );
         }
-      } catch {}
+      } catch (error) {
+        console.log(error);
+      }
 
       return {
         cellId,

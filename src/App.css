@@ -3,7 +3,7 @@
 * {
   box-sizing: border-box;
   font-size: 16px;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(233, 223, 190);
   font-family: "Roboto", sans-serif;
 }
 
@@ -32,10 +32,68 @@ p {
   align-content: center;
   text-align: center;
   margin: 5vh;
+  margin-bottom: 0;
 }
 
 .logos-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
+}
+
+.logos-container img {
+  margin: 0 3vh;
+}
+
+.img-me {
+  height: 250px;
+  border-radius: 5vh;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-challenge {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info-personal-social {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-personal-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.social-media {
+  height: 40px;
+  margin: 3vh;
+}
+
+.effectus {
+  height: 100px;
+  width: 100px;
+  align-self: center;
+}
+
+.social-media:hover {
+  animation: rainbow 1s ease-in-out infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    fill: rgb(0, 0, 0);
+  }
+  50% {
+    fill: rgb(193, 79, 79);
+  }
+  100% {
+    fill: rgb(0, 0, 0);
+  }
 }

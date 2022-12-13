@@ -1,12 +1,12 @@
 import { FunctionComponent } from "react";
-import Cell, { CELL_HEIGTH, CELL_WIDTH } from "../Cell/Cell.js";
-import Column from "../Columns/Column.js";
-import Row from "../Row/Row.js";
+import Cell, { CELL_HEIGTH, CELL_WIDTH } from "../Cell/Cell";
+import Column from "../Columns/Column";
+import Row from "../Row/Row";
 import { useRecoilValue } from "recoil";
 import classes from "./Sheet.module.css";
-import { SheetSizeState } from "../../store/SheetSizeState.js";
-import AxisCell from "../AxisCell/AxisCell.js";
-import { numberToChar } from "../../utils/numberToChar.js";
+import { SheetSizeState } from "../../store/SheetSizeState";
+import AxisCell from "../AxisCell/AxisCell";
+import { numberToChar } from "../../utils/numberToChar";
 
 export type SheetProps = {};
 

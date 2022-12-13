@@ -1,0 +1,16 @@
+.Options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2vh;
+}
+
+.Options div {
+  display: flex;
+  flex-direction: column;
+}
+
+.Checkbox {
+  height: 1.5rem;
+}
