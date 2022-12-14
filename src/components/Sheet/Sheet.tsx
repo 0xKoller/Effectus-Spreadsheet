@@ -10,8 +10,11 @@ import { numberToChar } from "../../utils/numberToChar";
 
 export type SheetProps = {};
 
+// Hoja de calculo
 const Sheet: FunctionComponent<SheetProps> = (props: any) => {
+  // Obtenemos el size de la hoja de calculo segun lo almacenado en Recoil
   const sheetSize = useRecoilValue(SheetSizeState);
+  // Calculo de columnas y celdas segun el size de la celda
   const numberOfColumns = Math.round(sheetSize.width / CELL_WIDTH);
   const numberOfRows = Math.round(sheetSize.heigth / CELL_HEIGTH);
   return (

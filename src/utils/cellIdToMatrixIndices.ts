@@ -1,5 +1,6 @@
 import { charToNumber } from "./charToNumber";
 
+// Aca traducimos el valor de ref de la celda a los indices de la matriz
 export const cellIdtoMatrixIndices = (cellId: string) => {
   const columnLetters = cellId.match(/[A-Z]+/)![0];
   const columnNumber = charToNumber(columnLetters);

@@ -6,9 +6,11 @@ import Sheet from "../Sheet/Sheet";
 
 export type SheetsContainerProps = {};
 
+// Contenedor de hoja de calculo
 const SheetsContainer: FunctionComponent<SheetsContainerProps> = (
   props: any
 ) => {
+  // Opcion para establecer en solo lectura a la hoja
   const [readState, setReadState] = useRecoilState<string>(
     ReadState("read-only")
   );
